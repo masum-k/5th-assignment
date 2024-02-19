@@ -200,8 +200,8 @@
                         </div>
                         <div class="flex mt-10 w-44 ml-56 h-14 py-4 px-4 rounded-xl bg-[#1DD10026]">
                             <img class="w-[28px] h-[28px]" src="images/seat-green.png">
-                            <h4 class="text-[#1DD100] font-medium">
-                                40 Seats left
+                            <h4 id="seats-left" class="text-[#1DD100] font-medium">
+                                8 Seats left
                             </h4>
                         </div>
                         <div class="static">
@@ -239,12 +239,91 @@
                     </div>
                 </div>
             </section>
-            <section class="mt-6">
-            <div>
+            <!-- Flex hobe -->
+            <div class="w-[1170px] h-[1056px] bg-white rounded-3xl mt-6 m-auto flex">
+                <!-- left section -->
+                <div>
+                    <div class="pl-8 pt-8">
+                        <h3 class="mb-6 text-2xl font-semibold">
+                            Select Your Seat
+                        </h3>
+                        <hr class="w-[609px] border-dashed bg-[#03071233]">
+                        <div class="flex space-x-96">
+                            <div class="flex my-4">
+                                <img src="images/seat-gray.png">
+                                Available
+                            </div>
+                            <div class="flex my-4">
+                                <img src="images/seat-green-filled.png">
+                                <h4 class="text-[#1DD100] font-medium">Selected</h4>
+                            </div>
+                        </div>
+                        <hr class="w-[609px] border-dashed bg-[#03071233]">
+                        <div class="bg-[#0307121A] w-28 h-14 mt-6 ml-[500px] px-9 py-3 rounded-xl"><img
+                                src="images/steering-wheel.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="ml-8">
+                            A
+                            <button onclick="busSeat()" id="a1" class="bg-[#F7F8F8] ml-4 mr-8 w-28 h-14 rounded-xl">A1</button>
+                            <button id="a2" class="bg-[#F7F8F8] mr-16 w-28 h-14 rounded-xl">A2</button>
+                            <button id="a3" class="bg-[#F7F8F8] mr-8 w-28 h-14 rounded-xl">A3</button>
+                            <button id="a4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl">A4</button>
+                        </div>
+                        <div class="mt-6 ml-8">
+                            B
+                            <button id="b1" class="bg-[#F7F8F8] ml-4 mr-8 w-28 h-14 rounded-xl">B1</button>
+                            <button id="b2" class="bg-[#F7F8F8] mr-16 w-28 h-14 rounded-xl">B2</button>
+                            <button id="b3" class="bg-[#F7F8F8] mr-8 w-28 h-14 rounded-xl">B3</button>
+                            <button id="b4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl">B4</button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-[2px] h-[992px] mt-8 ml-8 bg-[#0307124D]">
+                <div class="ml-8 mt-8">
+                    <h4 class="mb-6 text-2xl font-semibold">Select Your Seat</h4>
+                    <hr class="w-[400px]">
+                    <div class="w-[433px] h-[335px] bg-[#F7F8F8] rounded-xl">
+                        <div class="font-medium gap-28 pl-8 pt-8 mt-6 flex"">
+                            <h4>Seat <span class=" w-6 h-3 px-2 rounded-xl text-white bg-[#1DD100]">2</span></h4>
+                            <h4>Class</h4>
+                            <h4>Price</h4>
+                        </div>
+                        <hr class="w-[369px] m-auto mt-4">
+                        <div class="ml-8 mt-4 flex">
+                            <h4 class="mr-32">A1</h4>
+                            <h4 class="mr-[117px]">Economoy</h4>
+                            <h4>550</h4>
+                        </div>
+                        <div class="ml-8 mt-4 flex">
+                            <h4 class="mr-32">B3</h4>
+                            <h4 class="mr-[117px]">Economoy</h4>
+                            <h4 class="mr-[117px]">550</h4>
+                        </div>
+                        <hr class="w-[369px] m-auto mt-4">
+                        <div class="font-medium gap-64 ml-8 mt-4 flex"">
+                            <h4>Total Price</h4>
+                            <h4>BDT</h4>
+                        </div>
+                        <div class=" mt-4">
+                            <input class="py-5 pl-5 ml-8 rounded-xl w-[300px] " type="text"
+                                placeholder="Have any coupon?">
+                            <button
+                                class="bg-[#1DD100] px-5 py-3 font-medium text-white rounded-lg absolute">Apply</button>
+                        </div>
+                        <div class="font-medium gap-64 ml-8 mt-4 flex"">
+                            <h4>Grand Total</h4>
+                            <h4>BDT</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </section>
+            </div>
         </section>
     </main>
+    <script src=" Script/index.js">
+    </script>
 </body>
 
 </html>
